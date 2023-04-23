@@ -1,5 +1,6 @@
 import './App.css';
 import { Container, Navbar, Nav } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, useNavigate, Route } from "react-router";
 import Details from './pages/details';
 import Logistics from './pages/logistics';
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar bg="dark" variant="dark">
+      <Navbar expand='lg' bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">Conference Name</Navbar.Brand>
           <Nav className="me-auto">
@@ -27,8 +28,10 @@ function App() {
       </Navbar>
       <Routes>
         <Route path='/' element={<div>
-          <div className='main-bg'>
-          Here's a banana
+          <div className="main-bg">
+            <h2 className='centered'>
+            Some details you'd like to show about the conference can go here.
+            </h2>
           </div>
           <h2>Conference name here</h2>
           <p>Some details about it?</p>
