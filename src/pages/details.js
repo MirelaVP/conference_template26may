@@ -2,7 +2,7 @@
 function Details() {
     return (
         <div>
-            <p>Details</p>
+            <h2>Details</h2>
         </div>
     )
 }

@@ -15,14 +15,14 @@ function App() {
     <div className="App">
       <Navbar expand='lg' bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Conference Name</Navbar.Brand>
+          <Navbar.Brand href="#home">Banana Conference</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link onClick={() => { navigate('/'); }}>HOME</Nav.Link>
             <Nav.Link onClick={() => { navigate('/details'); }}>Details</Nav.Link>
             <Nav.Link onClick={() => { navigate('/logistics'); }}>Location</Nav.Link>
             <Nav.Link onClick={() => { navigate('/participants'); }}>Participants</Nav.Link>
             <Nav.Link onClick={() => { navigate('/data'); }}>Data</Nav.Link>
-            <Nav.Link onClick={() => { navigate('/register'); }}>Register</Nav.Link>
+            <Nav.Link onClick={() => { navigate('/register'); }}>Login/Register</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

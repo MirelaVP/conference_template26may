@@ -2,7 +2,10 @@
 function Data() {
     return (
         <div>
-            <p>Data downloads</p>
+            <h2>Data downloads</h2>
+            <p>
+                This page is under construction
+            </p>
         </div>
     )
 }
