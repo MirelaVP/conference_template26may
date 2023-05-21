@@ -3,10 +3,10 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, useNavigate, Route } from "react-router";
 import Details from './pages/details';
+import Login from './pages/login';
 import Logistics from './pages/logistics';
 import Participants from './pages/participants';
 import Register from './pages/register';
-import Data from './pages/data';
 
 function App() {
   let navigate = useNavigate();
@@ -21,8 +21,8 @@ function App() {
             <Nav.Link onClick={() => { navigate('/details'); }}>Details</Nav.Link>
             <Nav.Link onClick={() => { navigate('/logistics'); }}>Location</Nav.Link>
             <Nav.Link onClick={() => { navigate('/participants'); }}>Participants</Nav.Link>
-            <Nav.Link onClick={() => { navigate('/data'); }}>Data</Nav.Link>
-            <Nav.Link onClick={() => { navigate('/register'); }}>Login/Register</Nav.Link>
+            <Nav.Link onClick={() => { navigate('/login'); }}>Data/Login</Nav.Link>
+            <Nav.Link onClick={() => { navigate('/register'); }}>Register</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -68,7 +68,7 @@ function App() {
         <Route path="/details" element={<Details />}></Route>
         <Route path="/logistics" element={<Logistics />}></Route>
         <Route path="/participants" element={<Participants />}></Route>
-        <Route path="/data" element={<Data />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Routes>
     </div>
