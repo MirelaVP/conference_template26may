@@ -50,23 +50,28 @@ function Login() {
         
         var { ID, password } = document.forms[0];
         const loginInfo = participants.find((user) => user.ID === ID.value());
-        
         if (loginInfo) {
             if (loginInfo.password !== password.value){
                 setErrorMessage({ name: "password", message: errors.pass });
             } else {
                 setSubmitted(true);
             }
+            setSubmitted(false);
         } else{
             setErrorMessage({ name: "ID", message: errors.ID })
+            setSubmitted(false)
         }
+
+        e.reset();
+
+        return submitted
     }
 
     return (
         <div className="app">
           <div className="login-form">
             <h2>Login to access the database</h2>
-            {submission ? <div>Login successful</div> : loginForm}
+            {submitted ? <div>Login successful</div> : loginForm}
           </div>
         </div>
       );
