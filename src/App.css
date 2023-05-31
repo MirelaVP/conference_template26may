@@ -24,6 +24,15 @@
   object-position: left;
 } */
 
+.table{
+  font-size: 13px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+
 /* Centered text */
 .centered {
   position: relative;

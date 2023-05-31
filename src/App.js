@@ -10,6 +10,8 @@ import Register from './pages/register';
 import Table from 'react-bootstrap/Table';
 import { faViacoin } from '@fortawesome/free-brands-svg-icons';
 import uni from './assets/uni.jpeg'
+import logo_uni from './assets/logo_uni.jpg'
+import fnr_logo from './assets/fnr_logo.gif'
 
 
 function App() {
@@ -54,6 +56,18 @@ function App() {
           />
           <h2>Sponsors</h2>
           <p>Need to put some scrollig logo stuff here</p>
+          <Table className={"table"}>
+            <tbody>
+              <tr>
+                <th>
+                  <img style={{ width: 100, height: 100}} src={logo_uni} />
+                </th>
+                <th>
+                  <img style={{ width: 180, height: 100}} src={fnr_logo} />
+                </th>
+              </tr>
+            </tbody>
+          </Table>
           <hr
             style={{
               background: 'lime',
@@ -62,8 +76,8 @@ function App() {
               height: '3px',
             }}
           />
+          
           <h2>Speaker thumbnails</h2>
-          <p>Table of the speaker pictures</p>
           <hr
             style={{
               background: 'lime',
@@ -72,7 +86,7 @@ function App() {
               height: '3px',
             }}
           />
-          <Table striped bordered hover>
+          <Table className={"table"}>
             <thead>
               <tr>
                 <th>#</th>
