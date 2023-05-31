@@ -12,6 +12,10 @@ import { faViacoin } from '@fortawesome/free-brands-svg-icons';
 import uni from './assets/uni.jpeg'
 import logo_uni from './assets/logo_uni.jpg'
 import fnr_logo from './assets/fnr_logo.gif'
+import AlexT from './assets/AlexT.png'
+import Banana_man from './assets/Banana_man.png'
+import Banana_man2 from './assets/Banana_man2.png'
+import Banana_Man3 from './assets/Banana_Man3.png'
 
 
 function App() {
@@ -58,11 +62,11 @@ function App() {
           <p>Need to put some scrollig logo stuff here</p>
           <Table className={"table"}>
             <tbody>
-              <tr>
-                <th>
+              <tr className='table_details'>
+                <th className='table_details'>
                   <img style={{ width: 100, height: 100}} src={logo_uni} />
                 </th>
-                <th>
+                <th className='table_details'>
                   <img style={{ width: 180, height: 100}} src={fnr_logo} />
                 </th>
               </tr>
@@ -88,30 +92,33 @@ function App() {
           />
           <Table className={"table"}>
             <thead>
-              <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+              <tr className='table_details'>
+                <th className='table_details'>
+                  <img style={{ width: 100, height: 100}} src={AlexT}/>
+                </th>
+                <th className='table_details'>
+                <img style={{ width: 100, height: 100}} src={Banana_man}/>
+                </th>
+                <th className='table_details'>
+                <img style={{ width: 100, height: 100}} src={Banana_man2}/>
+                </th>
+                <th className='table_details'>
+                <img style={{ width: 100, height: 100}} src={Banana_Man3}/>
+                </th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+              <tr className='table_details'>
+                <td className='table_details'>Alexandre Tkatchenko</td>
+                <td className='table_details'>a name</td>
+                <td className='table_details'>another name</td>
+                <td className='table_details'>then another name</td>
               </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td colSpan={2}>Larry the Bird</td>
-                <td>@twitter</td>
+              <tr className='table_details'>
+                <td className='table_details'>University of Luxembourg</td>
+                <td className='table_details'>a University</td>
+                <td className='table_details'>another University</td>
+                <td className='table_details'>then another</td>
               </tr>
             </tbody>
           </Table>
