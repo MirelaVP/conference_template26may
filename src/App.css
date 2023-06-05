@@ -25,13 +25,60 @@
 } */
 
 .table{
-  font-size: 13px;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+  border-collapse: collapse;
+  border: none;
+  overflow-wrap: break-word;
+  margin: 1em 5% 5% 0;
+}
+
+.table_big{
+  font-size: 18px;
+  text-align: center;
+  border-collapse: collapse;
+  border: none ;
+  width: 80%;
+  border-style: none;
+  overflow-wrap: break-word;
+  border-bottom-style: none ;
+  margin-left: 5%;
+  margin-right: 60em;
+}
+
+.table_hide_border{
+  border-style: none;
+  margin-right: 5%;
+
+  font-size: 18px;
+  text-align: center;
+  border-collapse: collapse;
+  border: none ;
+  overflow-wrap: break-word;
+  border-bottom-style: none ;
+  margin-left: 5%;
+  margin-right: 60em;
+}
+
+.marginer{
+  margin: 1em 5%;
+}
+
+.fonter{
+  font-size: 18px;
+}
+
+.table_small{
+  font-size: 8px;
   text-align: center;
   padding: 10px;
   width: 50%;
   margin: auto;
   border-collapse: collapse;
   border: none;
+  overflow-wrap: break-word;
 }
 
 .table_details{

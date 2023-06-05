@@ -52,24 +52,99 @@ function People() {
 
   const data = React.useMemo(
     () => [
+
       {
-        col1: 'BananaMan_1',
-        col2: 'Banana University',
-        col3: 'Works on Banana-reactor engine',
-        col4: '0.8',
+        col1: 'Ilyes Batatia',
+        col2: 'University of Cambridge',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Jörg Behler',
+        col2: 'Ruhr University Bochum',
+        col3: 'TBD',
+        col4: 'TBD',
       },
       {
-        col1: 'Monsieur Banana',
-        col2: 'Université du Banana',
-        col3: 'Le travail sur le dynamique banana-ique',
-        col4: '0.99',
+        col1: 'Gábor Csányi',
+        col2: 'University of Cambridge',
+        col3: 'TBD',
+        col4: 'TBD',
       },
       {
-        col1: 'Eww Banana',
-        col2: 'Brahhh',
-        col3: 'Bananas are horrible: a psychological investigation',
-        col4: '0.02',
+        col1: 'Felix Andreas Faber',
+        col2: 'University of Cambridge',
+        col3: 'TBD',
+        col4: 'TBD',
       },
+      {
+        col1: 'Gianni De Fabritiis',
+        col2: 'Pompeu Fabra University of Barcelona',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+      {
+        col1: 'Thorben Frank',
+        col2: 'TU Berlin',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+      {
+        col1: 'Tsz Wai Ko',
+        col2: 'University of San Diego',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+      {
+        col1: 'O. Anatole von Lilienfeld',
+        col2: 'University of Toronto',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+      
+      {
+        col1: 'Johannes Margraf',
+        col2: 'Fritz Haber Institute',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+      
+
+      {
+        col1: 'Markus Meuwly',
+        col2: 'University of Basel',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Klaus-Robert Müller',
+        col2: 'TU Berlin',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Igor Poltavskyi',
+        col2: 'University of Luxembourg',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Matthias Rupp',
+        col2: ' Luxembourg Institute of Science and Technology',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Alexandre Tkatchenko',
+        col2: 'University of Luxembourg',
+        col3: 'TBD',
+        col4: 'TBD',
+      }
     ],
     []
   )
@@ -85,11 +160,11 @@ function People() {
         accessor: 'col2',
       },
       {
-        Header: 'Topic',
+        Header: 'ML model used',
         accessor: 'col3',
       },
       {
-        Header: 'Banana-ness',
+        Header: 'Programme slot',
         accessor: 'col4',
       },
     ],
@@ -135,7 +210,7 @@ function People() {
                 <th
                   {...column.getHeaderProps(column.getSortByToggleProps())}
                   style={{
-                    borderBottom: 'solid 3px red',
+                    borderBottom: 'solid 3px blue',
                     color: 'black',
                   }}
                 >
