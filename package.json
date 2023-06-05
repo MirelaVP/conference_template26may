@@ -1,6 +1,7 @@
 {
   "name": "conference_template",
   "version": "0.1.0",
+  "homepage": "https://tea-uni-lu.github.io/react-gh-pages",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -27,6 +28,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -53,6 +56,7 @@
   "devDependencies": {
     "@iconify/icons-mdi": "^1.2.44",
     "@iconify/react": "^4.1.0",
+    "gh-pages": "^5.0.0",
     "react-table": "^7.8.0"
   }
 }
