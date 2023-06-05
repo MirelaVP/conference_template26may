@@ -107,7 +107,7 @@ function App() {
           </Table>
 
           <h2>Sponsors</h2>
-          <p style={{fontSize: "18px"}}>We would like to acknowledge and thank our sponsors for the TEA2023 workshop. Klaus Robert Müller image is copyright property of © Leopoldina</p>
+          <p style={{fontSize: "18px"}}>We would like to acknowledge and thank our sponsors for the TEA2023 workshop. Klaus Robert Müller image is copyright property of © Leopoldina.</p>
           <Table className={"table"}>
             <tbody>
               <tr className='table_details'>
